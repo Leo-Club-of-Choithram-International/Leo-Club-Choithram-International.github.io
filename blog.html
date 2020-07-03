@@ -1,0 +1,97 @@
+<html>
+    <body>
+        <style>
+            @font-face {
+            font-family: Aldo the Apache;
+            src: url(AldotheApache.ttf);
+            }
+            html {
+            --scrollbarBG: #000000;
+            --thumbBG: #f14251;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            }
+            body::-webkit-scrollbar {
+            width: 11px;
+            }
+            body {
+            scrollbar-width: thin;
+            scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+            }
+            body::-webkit-scrollbar-track {
+            background: var(--scrollbarBG);
+            }
+            body::-webkit-scrollbar-thumb {
+            background-color: var(--thumbBG) ;
+            border-radius: 6px;
+            border: 3px solid var(--scrollbarBG);
+            }
+            body {
+                margin: 0;
+                overflow-x: hidden;
+            }
+            .nav-bar {
+                background-color: #272727;
+                padding: 0;
+                width: 100vw;
+                height: 10vh;
+
+            }
+            
+            ul {
+                position: absolute;
+                margin-left: 10vw;
+                padding-bottom: 5vh;
+            }
+            li {
+                font-family: Aldo the Apache;
+                font-size: 20pt;
+                color: white;
+                display: inline;
+                padding: 2vw;
+
+            }
+            .logo {
+                position: relative;
+                left: 3vw;
+                top: 2vh;
+                width: 5vw;
+                height: auto;
+            }
+            .insta-logo {
+                position: absolute;
+                left: 93vw;
+                top: 2vh;
+                width: 5vw;
+                height: auto;
+                z-index: 17;
+            }
+
+            .global-logo {
+                position: absolute;
+                left: 87vw;
+                top: 2vh;
+                width: 5vw;
+                height: auto;
+            }
+
+        </style>
+
+        <div class="nav-bar">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li onclick="document.querySelector('.about-us').scrollIntoView({ behavior: 'smooth' });">About us</li>
+                <li onclick="document.querySelector('.team').scrollIntoView({ behavior: 'smooth' });">Team</li>
+                <li onclick="document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });">Contact</li>
+                <li><a href="blog/blog.html">Blog</a></li>
+            </ul>
+            <a href="https://www.lionsclubs.org/"><img src="Leo_clubs_logo.svg.png" class="global-logo"></a>
+            <a href="https://instagram.com/"><img src="instagram.png" class="insta-logo"></a>
+        </div>
+        
+    </body>
+</html>
